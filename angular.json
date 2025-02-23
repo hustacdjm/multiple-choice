@@ -89,16 +89,17 @@
 					"builder": "ngx-build-plus:dev-server",
 					"configurations": {
 						"production": {
-							"browserTarget": "fuse:build:production",
+							"buildTarget": "fuse:build:production",
 							"extraWebpackConfig": "webpack.config.js"
 						},
 						"development": {
-							"browserTarget": "fuse:build:development"
+							"buildTarget": "fuse:build:development"
 						}
 					},
 					"defaultConfiguration": "development",
 					"options": {
 						"port": 4700,
+						"buildTarget": "fuse:build",
 						"publicHost": "http://localhost:4700",
 						"extraWebpackConfig": "webpack.config.js"
 					}

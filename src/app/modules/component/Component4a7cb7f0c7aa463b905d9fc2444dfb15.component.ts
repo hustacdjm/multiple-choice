@@ -8,16 +8,16 @@ import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 
 @Component({
-    selector     : 'Component3121f9dfc5bb427ca055e6521008c7f95129a609d19b4df48659566e00894fa5',
+    selector     : 'Component4a7cb7f0c7aa463b905d9fc2444dfb15',
     standalone   : true,
-    templateUrl  : './Component3121f9dfc5bb427ca055e6521008c7f95129a609d19b4df48659566e00894fa5.component.html',
+    templateUrl  : './Component4a7cb7f0c7aa463b905d9fc2444dfb15.component.html',
     encapsulation: ViewEncapsulation.None,
     imports:[
        CommonModule, FormsModule, ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatIconModule,MatRadioModule
     ]
     
 })
-export class Component3121f9dfc5bb427ca055e6521008c7f95129a609d19b4df48659566e00894fa5
+export class Component4a7cb7f0c7aa463b905d9fc2444dfb15
 {
 
     @Input() data:any;

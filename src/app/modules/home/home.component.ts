@@ -35,16 +35,33 @@ export class LandingHomeComponent implements AfterContentInit
    
 
     template={
-      "name": 'React Sample component',
-      "description":'react sample component',
-      "version": 'v1.0'
-    };
+  "name" : "Multiple Choice",
+  "description" : "mutliple chioce component (angular version)",
+  "version" : "1.0"
+};
   
     reactiveComponent={
-
-      
-
-    };
+  "component" : {
+    "componentTemplateId" : "67b5294794d84c64a19d1904",
+    "templateDeployId" : null,
+    "content" : {
+      "question" : "<p>This is the question text?</p>",
+      "options" : [ {
+        "key" : "1",
+        "value" : "choice 1"
+      }, {
+        "key" : "2",
+        "value" : "choice 2"
+      } ],
+      "rightanswer" : [ "1", "2" ]
+    },
+    "ui" : { },
+    "scores" : [ ]
+  },
+  "runtime" : {
+    "data" : { }
+  }
+};
 
 
 
@@ -57,8 +74,8 @@ export class LandingHomeComponent implements AfterContentInit
    
     async StartTest(){
       
-        const componentModule = await import('../component/Component3121f9dfc5bb427ca055e6521008c7f95129a609d19b4df48659566e00894fa5.component');
-        const TemplateComponent = componentModule['Component3121f9dfc5bb427ca055e6521008c7f95129a609d19b4df48659566e00894fa5'];
+        const componentModule = await import('../component/Component4a7cb7f0c7aa463b905d9fc2444dfb15.component');
+        const TemplateComponent = componentModule['Component4a7cb7f0c7aa463b905d9fc2444dfb15'];
 
         this.testContainer.clear();
 

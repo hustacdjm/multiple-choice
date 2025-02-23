@@ -2,13 +2,15 @@
 
     <ng-container>
 
-        <div class="mt-4">
-           
-            Test for the selector without change other infos.
-           
-        </div>    
+      <div class="ml-1" [innerHTML]="data.component?.content?.question"></div>
 
-        
+      <mat-checkbox *ngFor="let option of data.component?.content?.options"
+      (change)="onAnswerChange($event)"
+      [checked]="isChecked(option.key)"
+      [value]="option.key" 
+      >
+      {{ option.value }}
+      </mat-checkbox>
     
     </ng-container>
     
